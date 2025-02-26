@@ -10,10 +10,10 @@ COLOR_CODES = {
 }
 
 def resistor_value(colors)
-  # Filtrer uniquement les couleurs valides
+
   digits = colors.map { |color| COLOR_CODES[color] }.compact
 
-  # Prendre les deux premiers chiffres et les concaténer
+
   value = digits.first(2).join
   value.empty? ? "Invalid input" : value
 end
