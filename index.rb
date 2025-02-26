@@ -10,10 +10,7 @@ COLOR_CODES = {
 }
 
 def resistor_value(colors)
-
   digits = colors.map { |color| COLOR_CODES[color] }.compact
-
-
   value = digits.first(2).join
   value.empty? ? "Invalid input" : value
 end
